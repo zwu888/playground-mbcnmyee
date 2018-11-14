@@ -19,6 +19,7 @@ bool hasUniqueChars2( std::string str)
     for (int i = 0; i < len; ++i)
     {
         int c = (int)(str[i] - 'a');
+        cout << c << endl;
         if ( check & ( 1 << c ) ) {
             return false;
         }
